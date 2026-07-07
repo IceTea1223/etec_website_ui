@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Kantumruy Pro", system-ui, -apple-system, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Kantumruy Pro", system-ui, sans-serif;
+  
+  --color-primary: #151b54;
+  --color-primary-container: #1a237e;
+  --color-on-primary-container: #e0e7ff;
+  --color-secondary: #1e297a;
+  --color-secondary-container: #2a3891;
+  --color-on-secondary-container: #ffcd00;
+  
+  --color-accent-yellow: #ffcd00;
+  --color-royal-blue: #151b54;
+  --color-surface-container: #0e133c;
+  --color-surface-container-low: #090c2a;
+  --color-surface-container-lowest: #06081e;
+  --color-surface-container-high: #141a5d;
+  --color-surface-container-highest: #1c247c;
+  
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #94a3b8;
+  --color-background: #090c27;
+  --color-on-background: #ffffff;
+  --color-outline: rgba(255, 255, 255, 0.15);
+  --color-outline-variant: rgba(255, 255, 255, 0.08);
+  
+  --color-secondary-fixed-dim: #2a3891;
+  --color-primary-fixed: #1a237e;
+  --color-primary-fixed-dim: #151b54;
+  --color-on-primary-fixed: #ffcd00;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+  background: rgba(9, 12, 39, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(14, 19, 60, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Radial Gradient */
+.hero-gradient {
+  background: radial-gradient(circle at 70% 30%, rgba(255, 205, 0, 0.15) 0%, rgba(9, 12, 39, 1) 100%) !important;
+}
+
+.promo-gradient {
+  background: linear-gradient(135deg, #151b54 0%, #2a3891 100%) !important;
+}
+
+.yellow-banner-gradient {
+  background: linear-gradient(135deg, #ffcd00 0%, #d4aa00 100%) !important;
+}
+
+.khmer-font {
+  font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+}
+
+/* Core Global Dark Overrides for Sophisticated Dark Aesthetic */
+body {
+  background-color: #090c27 !important;
+  color: #f8fafc !important;
+}
+
+/* Map white panels and cards into deep translucent charcoal surfaces */
+.bg-white, div.bg-white {
+  background-color: #0e133c !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Smooth out borders to match thin Sophisticated Dark gridlines */
+.border-gray-100, .border-primary\/10, .border-primary\/20, .border-outline-variant\/50 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Set readable text contrast on dark background shapes */
+.text-gray-900, .text-gray-800, .text-gray-700, .text-gray-600, .text-gray-500, .text-primary {
+  color: #94a3b8 !important;
+}
+
+/* High contrast headings */
+h1, h2, h3, h4, h5, h6, 
+.text-white, 
+span.text-primary,
+h3.text-primary,
+h4.text-primary {
+  color: #ffffff !important;
+}
+
+/* Ensure gold tags and custom brand details render elegantly */
+.text-accent-yellow,
+span.text-accent-yellow,
+.text-accent-yellow\/80 {
+  color: #ffcd00 !important;
+}
+
+.bg-accent-yellow,
+button.bg-accent-yellow,
+span.bg-accent-yellow {
+  background-color: #ffcd00 !important;
+  border-color: rgba(255, 205, 0, 0.5) !important;
+}
+
+/* Text color contrast for gold buttons and gold badges */
+button.bg-accent-yellow,
+.bg-accent-yellow button,
+.bg-accent-yellow .text-primary,
+.bg-accent-yellow span,
+#get-started-btn {
+  color: #090c27 !important;
+  font-weight: 700 !important;
+}
+
+/* Gold borders mapping */
+.border-accent-yellow, .border-accent-yellow\/30 {
+  border-color: rgba(255, 205, 0, 0.3) !important;
+}
+
+/* Form inputs & fields modern luxury dark styles */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+  background-color: #090c27 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+input[type="text"]::placeholder, 
+input[type="email"]::placeholder, 
+input[type="tel"]::placeholder, 
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+select option {
+  background-color: #0e133c !important;
+  color: #ffffff !important;
+}
+
+/* Map special promotional banners into gold gradients */
+#home-promo-banner {
+  background: linear-gradient(90deg, #0e133c 0%, rgba(255, 205, 0, 0.15) 100%) !important;
+  border-top: 1px solid rgba(255, 205, 0, 0.25) !important;
+  border-bottom: 1px solid rgba(255, 205, 0, 0.25) !important;
+}
+
+/* High-end badge containers */
+.bg-accent-yellow\/15, .bg-accent-yellow\/20 {
+  background-color: rgba(255, 205, 0, 0.15) !important;
+  color: #ffcd00 !important;
+}
+
+/* Section background colors mapping */
+.bg-background {
+  background-color: #090c27 !important;
+}
+
+.bg-surface-container, .bg-surface-container-low, .bg-surface-container-low\/90 {
+  background-color: #0e133c !important;
+}
+
+/* Custom Toast notification cards */
+#toast-wrapper > div {
+  background-color: #141a5d !important;
+  border: 1px solid rgba(255, 205, 0, 0.5) !important;
+  color: #ffffff !important;
+}
+
+/* Backdrops & Overlays */
+.bg-primary\/40 {
+  background-color: rgba(9, 12, 39, 0.8) !important;
+}
+
+/* Cart drawer override */
+div.w-screen.max-w-md.bg-white {
+  background-color: #0e133c !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
