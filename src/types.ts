@@ -49,6 +49,7 @@ export const STAT_CARDS: StatCard[] = [
     khLabel: 'សិស្សដែលបានបញ្ចប់',
     icon: 'school',
     borderType: 'yellow'
+
   },
   {
     id: 'employment',

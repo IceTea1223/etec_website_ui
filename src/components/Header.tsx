@@ -45,9 +45,12 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNavClick('home')}
             id="brand-logo"
           >
-            <div className="bg-accent-yellow text-primary font-bold p-2.5 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-              <span className="text-xl tracking-wider font-extrabold font-display">ETEC</span>
-            </div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBeDleMe5f3qp6zRi2v1Tqxq-aPueVC2xBz7zXf62mkSe5QPaMS0Zmdl0&s=10"
+              alt="ETEC banner"
+              className="w-14 h-14 rounded object-cover border border-white/20 shadow-lg"
+            />
+          
             <div className="flex flex-col">
               <span className="font-extrabold tracking-tight text-xl font-display text-white group-hover:text-accent-yellow transition-colors">
                 ETEC Center
